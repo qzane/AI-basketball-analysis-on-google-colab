@@ -2,6 +2,7 @@ import os
 import sys
 import cv2
 
+from flask_ngrok import run_with_ngrok
 from flask import Flask, render_template, Response,  request, session, redirect, url_for, send_from_directory, flash, jsonify, abort
 from werkzeug.utils import secure_filename
 from PIL import Image
@@ -10,6 +11,7 @@ from src.config import shooting_result
 from src.app_helper import getVideoStream, get_image, detectionAPI
 
 app = Flask(__name__)
+run_with_ngrok(app)   #starts ngrok when the app is run
 UPLOAD_FOLDER = './static/uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 #useless key, in order to use session
@@ -121,4 +123,5 @@ def after_request(response):
     return response
 
 if __name__ == '__main__':
-    app.run(debug=True, use_reloader=True)
+    #app.run(debug=True, use_reloader=True)
+    app.run()

@@ -38,7 +38,7 @@ def openpose_init():
             sys.path.append(os.path.dirname(os.getcwd()))
             import OpenPose.Release.pyopenpose as op
         else:
-            path = os.path.join(os.getcwd(), 'OpenPose/openpose')
+            path = os.path.join(os.getcwd(), '/usr/local/python')
             print(path)
             sys.path.append(path)
             import pyopenpose as op
