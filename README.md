@@ -13,6 +13,7 @@
 </p>
 
 > 🏀 Analyze basketball shots and shooting pose with machine learning!
+ [<img src="https://colab.research.google.com/assets/colab-badge.svg" align="center">](https://colab.research.google.com/github/hardik0/AI-basketball-analysis-on-google-colab/blob/master/AI_basketball_analysis_google_colab.ipynb)
 
 This is an artificial intelligence application built on the concept of **object detection**. Analyze basketball shots by digging into the data collected from object detection. We can get the result by simply uploading files to the web App, or submitting a **POST request** to the API. Please check the [features](#features) below. There are more features coming up! Feel free to follow.
 
